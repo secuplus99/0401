@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/blue_200</item>
+        <item name="colorAccent">@color/blue_200</item>
+
+    </style>
+
+    <style name="white" parent="Theme.AppCompat.Light"></style>
+
+    <style name="CustomCheckBox" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorControlNormal">@color/blue_200</item>
+        <item name="android:colorControlActivated">@color/blue_200</item>
+    </style>
+</resources>

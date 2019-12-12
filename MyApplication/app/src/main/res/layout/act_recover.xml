@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.hj.nf.myapplication.MainActivity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+
+    >
+    <LinearLayout
+        android:id="@+id/titles"
+        android:layout_width="fill_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/transparent_white_55"
+            >
+            <ImageView
+                android:id="@+id/title_icon"
+                android:background="@drawable/back_long_32"
+                android:layout_width="36dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:text="복구"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+
+                android:textSize="23dp"/>
+            <ImageView
+                android:id="@+id/title_btn"
+                android:background="@drawable/help_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/blue_200"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/direct"
+        android:layout_below="@id/titles"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="90dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/direct_ll111"
+
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="기기에서 프라이버시 보호를 위하여 숨길 정보를 복구합니다."
+                android:gravity="center"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+                />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/direct_ll111"
+            android:orientation="vertical"
+            android:id="@+id/direct_ll"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            >
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="25dp"
+                android:textAlignment="textStart"
+                android:background="@color/transparent_white_85"
+                android:drawableStart="@drawable/contact_32"
+                android:drawableEnd="@drawable/next_24"
+                android:text="  연락처"
+                android:id="@+id/btn_call"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="프라이버시를 위해 숨겼던 연락처를 복구합니다"
+                android:gravity="left"
+                android:textSize="15dp"
+                />
+            <RelativeLayout
+                android:id="@+id/calltitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/call_1"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/calltitle_iv"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:text="통화기록을 복구합니다"
+                    android:textSize="15dp"
+                    android:layout_toRightOf="@id/calltitle_iv"
+                    android:layout_centerVertical="true" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/calltitle2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/sms_1"
+                    android:id="@+id/calltitle2_iv"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:text="문자내용을 복구합니다"
+                    android:textSize="15dp"
+                    android:layout_toEndOf="@+id/calltitle2_iv"
+                    android:layout_centerVertical="true"
+                    />
+
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="25dp"
+                android:textAlignment="textStart"
+                android:background="@color/transparent_white_85"
+                android:drawableStart="@drawable/file_32"
+                android:drawableEnd="@drawable/next_24"
+                android:text="  파일"
+                android:id="@+id/btn_file"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="프라이버시를 위해 숨겼던 파일들을 복구합니다"
+            android:gravity="left"
+            android:textSize="15dp"
+            />
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+

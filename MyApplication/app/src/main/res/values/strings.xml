@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">숨기미</string>
+    <string name="chooser_title">Lorem ipsum</string>
+    <string name="hide_data">/data/user/0/com.hj.nf.myapplication/files/</string>
+</resources>

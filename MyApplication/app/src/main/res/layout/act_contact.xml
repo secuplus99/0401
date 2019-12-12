@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    >
+    <LinearLayout
+        android:id="@+id/titles"
+        android:layout_width="fill_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/transparent_white_55"
+            >
+            <ImageView
+                android:id="@+id/title_icon"
+                android:background="@drawable/back_long_32"
+                android:layout_width="36dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:text="연락처"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+
+                android:textSize="23dp"/>
+            <ImageView
+                android:id="@+id/title_btn"
+                android:background="@drawable/help_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/blue_200"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/direct"
+        android:layout_below="@id/titles"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="70dp"
+
+        >
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_text"
+            android:hint="연락처 검색"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_text"
+            android:orientation="horizontal"
+            android:id="@+id/direct_ll"
+            >
+
+
+
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="300dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/rv"
+                app:layoutManager="LinearLayoutManager"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:padding="15dp">
+        <Button
+            android:id="@+id/backbtn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/back_blue_24"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"/>
+        <Button
+            android:id="@+id/nextbtn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/next_blue_24"
+
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>
+
